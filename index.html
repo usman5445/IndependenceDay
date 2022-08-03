@@ -11,6 +11,7 @@
     <button onclick="handleWish()">wish</button>
     <script>
       function handleWish(e) {
+        console.log("console");
         var text = "My title" + "\r\n\r\n" + "My description and link";
         window.open(`whatsapp://send?text=${text}`, "_blank");
       }
