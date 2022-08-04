@@ -4,16 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    this is a something
-    <button onclick="handleWish()">wish</button>
+    <section class="container">
+      <h1 class="text-pop-up-top" id="userName">USMAN</h1>
+      <p class="some">की तरफ से आपको</p>
+      <img
+        src="./assets/independence-day-2018.png"
+        alt=""
+        srcset=""
+        class="img1 wobble-hor-top"
+      />
+      <button onclick="handleWish()" id="share">
+        <img
+          class="svg"
+          src="./assets/whatsapp-svgrepo-com.svg"
+          alt=""
+          srcset=""
+        />
+        आगे भेजे
+      </button>
+    </section>
+
     <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const userName = urlParams.get("name").toLocaleUpperCase();
+      document.getElementById("userName").innerText = userName;
+
       function handleWish(e) {
-        console.log("console");
-        var text = "My title" + "\r\n\r\n" + "My description and link";
-        window.open("whatsapp://send?text=hello%0aworld", "_blank");
+        const value = window.prompt("Please enter your name: ");
+        const text = `whatsapp://send?text=~*${userName}*~ ने आपको कुछ भेजा है।%0a खोलने के लिए यहाँ क्लिक करें। 👇 %0a http://127.0.0.1:5500/index.html?name=${value} `;
+        window.open(text, "_blank");
       }
     </script>
   </body>

@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./assets/77548032.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* background: rgb(29, 128, 11);
+  background: linear-gradient(
+    0deg,
+    rgba(29, 128, 11, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(240, 108, 9, 1) 100%
+  ); */
+
+  backdrop-filter: brightness(60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-pop-up-top {
+  -webkit-animation: text-pop-up-top 0.8s ease-in-out infinite alternate-reverse
+    both;
+  animation: text-pop-up-top 0.8s ease-in-out infinite alternate-reverse both;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.some {
+  font-size: xx-large;
+  font-weight: bold;
+  color: gainsboro;
+}
+
+.img1 {
+  width: 90vw;
+}
+.svg {
+  height: 3rem;
+  margin-right: 5px;
+}
+#share {
+  padding: 5px;
+  background-color: green;
+  border: solid 2px white;
+  color: white;
+  font-size: xx-large;
+  position: absolute;
+  bottom: 2rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+
+  box-shadow: 0 0 20px black;
+}
+.wobble-hor-top {
+  -webkit-animation: wobble-hor-top 0.8s infinite both;
+  animation: wobble-hor-top 0.8s infinite both;
+}
+
+@-webkit-keyframes wobble-hor-top {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(6deg);
+    transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(-6deg);
+    transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(3.6deg);
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(-2.4deg);
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(1.2deg);
+    transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+@keyframes wobble-hor-top {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(6deg);
+    transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(-6deg);
+    transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(3.6deg);
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(-2.4deg);
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(1.2deg);
+    transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+
+@-webkit-keyframes text-pop-up-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
+      0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc,
+      0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+@keyframes text-pop-up-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
+      0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc,
+      0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
